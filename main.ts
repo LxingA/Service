@@ -22,7 +22,6 @@ const Engine = Bridge(Core);
 Engine["use"](json());
 Engine["use"](urlencoded({extended:true}));
 Engine["use"](hidePoweredBy());
-Engine["use"](Core["static"](join(__dirname,"./public")));
 Engine["use"](IP["mw"]());
 
 /** Integrar EJS como Motor de Plantillas HTML para la Aplicación */
@@ -37,7 +36,7 @@ const Server = createSecureServer({
     cert: readFileSync(join(__dirname,"./certificate.pem")),
     key: readFileSync(join(__dirname,"./certificate.key")),
     passphrase: AppConfig()["database"]["token"],
-    allowHTTP1: false
+    allowHTTP1: true
 },Engine);
 
 export {

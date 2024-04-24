@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" author="<%=author%>" version="<%=version%>" ondragstart="return false" oncontextmenu="return false" onselectstart="return false">
+    <%-include('partial/head',{title:"Acceso a la Información de las Aplicaciones del Proyecto"})%>
+    <body>
+        <%-include('component/header')%>
+        <div class="container col-xxl-8">
+            <div class="row flex-lg-row-reverse align-items-center g-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <center>
+                        <img loading="lazy" class="d-block mx-lg-auto img-fluid" src="https://resource.socasf.net/illustration.png?v=4c7659a3465f"/>
+                    </center>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                        CodeInk Service
+                    </h1>
+                    <p class="lead">
+                        Acceso a la Información de las Aplicaciones del Proyecto
+                    </p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button class="btn btn-primary btn-lg px-4 me-md-2" id="ckapi_servicebutton_contact">
+                            Contacto
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%-include('component/footer',{year,author})%>
+        <%-include('partial/script')%>
+    </body>
+</html>

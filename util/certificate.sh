@@ -10,7 +10,7 @@ signed=../certificate.csr
 build=../static
 env=../.env
 path=$(which openssl)
-subject="/emailAddress=contacto@socasf.net/C=MX/ST=NL/L=Monterrey/O=SocASF/OU=IT/CN=service.socasf.net"
+subject="/emailAddress=contacto@socasf.net/C=MX/ST=NL/L=Monterrey/O=SocASF/OU=CK/CN=service.socasf.net"
 declare -a lK=( '_' '?' '=' 1 2 3 4 5 6 7 8 9 0 'H' 'N' 'T' 'G' 'B' 'R' 'F' 'V' 'E' 'D' 'C' 'W' 'S' 'X' 'Q' 'A' 'Z' 'O' 'Y' 'q' 'P' 'a' 'L' 'z' 'I' 'w' 'K' 's' 'U' 'x' 'J' 'e' 'M' 'd' 'c' 'r' 'f' 'v' 't' 'g' 'b' 'y' 'h' 'n' 'u' 'j' 'm' 'i' 'k' 'o' 'l' 'p' )
 
 : '
